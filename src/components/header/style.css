@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+}
+
+
+.sub-Container{
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.sub-Container .logo{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    background-color: #FFF;
+    align-items: center;
+    justify-content: flex-end;
+    @media (max-width:850px) {
+        display: none;
+    }
+}
+
+.sub-Container .logo .detalheLogo{
+    width: 110px;
+    margin:6px 10px 0 -13px;
+
+
+}
+
+.sub-Container .logo .logoName{
+    width: 145px;
+    height: 51px;
+    margin: 0 auto;
+
+
+}
+
+
+.sub-Container .menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color:#fbaf17;
+    flex: 1;
+    margin-left: 10px;
+
+    @media (max-width:850px) {
+        margin: 0;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;  
+        justify-content: center;
+    
+    }
+}
+
+.sub-Container .menu ul{
+    display: flex;
+    list-style: none;
+    margin: 0 50px;
+}
+.sub-Container .menu li{
+    margin: 0 17px ;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: .9rem;
+    padding: 10px 0px;
+    
+}
+.sub-Container .menu .active{
+    font-weight: bold;
+    border-bottom: 3px solid #FFF;
+    padding: 10px 0px 5px 0px;
+
+}
+.sub-Container .menu .menuCategoria{
+    display: flex;
+    align-items: center;
+}
+.sub-Container .menu .menuCategoria img{
+    margin-left: 5px;
+}
+.sub-Container .menu .menuContato {
+    background-color: #202332;
+    color: #FFF;
+    padding: 10px 30px;
+    margin: 0;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.divHover{
+    position: relative;
+    overflow: none;
+}
+
+.logosAcessorios{
+    background-color: #fbaf17;
+    width: 68px;
+    height: 68px;
+}
+
+.mobile{
+    display: none;
+}
+.resposive{
+    display: none;
+}
+
+@media (max-width:500px) {
+    .sub-Container .menu{
+        display: none;
+    }
+
+    .mobile{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background-color:#fbaf17;
+        padding: 0 10px;
+        justify-content: space-between;
+    }
+    .mobile img{
+        width: 100px;
+        height: 45px;
+    }
+    .mobile .menuBar{
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .resposive{
+        width: 100%;
+        background-color: #f6bb46e7;
+        position: absolute;
+        top: 60px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .resposive ul{
+        list-style: none;
+    }
+    .resposive li{
+        padding: 10px 0px;
+        font-weight: bold;
+        color: #202332;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,160 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.container .bg{
+    width: 100%;
+
+}
+.container .subContainer{
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    display: flex;
+    position: absolute;
+}
+.container .subContainer .ladoLeft{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @media (max-width:900px) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+    }
+}
+.container .subContainer .ladoLeft .preContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @media (max-width:900px){
+        flex-direction:row
+    }
+}
+.container .subContainer .ladoLeft h1{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin: 40px 0 20px 0px;
+    color: #FFF;
+
+
+    @media (max-width:570px) {
+        font-size: 1.2rem;
+        margin: 10px;
+    }
+}
+.container .subContainer .ladoLeft .text{
+    color: #FFF;
+    line-height: 35px;
+    margin-bottom: 30px;
+
+    @media (max-width:570px) {
+        font-size: .9rem;
+        line-height: 20px;
+    }
+
+}
+
+.container .subContainer .ladoLeft .btns{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .subContainer .ladoLeft button{
+    width: 300px;
+    border-radius: 15px;
+    padding: 15px 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 800;
+
+    @media (max-width:1075px) {
+        width: 220px;
+        margin-bottom: 10px;
+        font-size: .7rem;
+        padding: 15px 0px;
+    }
+}
+.container .subContainer .ladoLeft .btn1{
+    background-color: #fbaf17;
+    border: none;
+    margin-bottom: 20px;
+    color: #202332;
+
+    @media (max-width:1075px) {
+        margin-bottom: 10px;
+    }
+}
+.container .subContainer .ladoLeft .btn2{
+    background-color: transparent;
+    border: 1px solid #CCC;
+    color: #FFF;
+    margin-bottom: 40px;
+
+    @media (max-width:1075px) {
+        margin-bottom: 20px;
+    }
+}
+.container .subContainer .ladoLeft .role{
+    display: flex;
+    align-items: center; 
+}
+.container .subContainer .ladoLeft .role p{
+    margin-left: 10px;
+    color: #FFF;
+    font-size: .9rem;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.container .subContainer .ladoRight{
+    display: flex;
+    width: 50%;
+
+    @media (max-width:900px) {
+        display: none;
+    }
+}
+
+.container .subContainer .ladoRight img{
+    @media (max-width:900px) {
+        display: none;
+    }
+}
+
+@media (max-width:450px) {
+    .container .subContainer .ladoLeft button{
+        width: 120px;
+        padding: 5px;
+    }
+    .container .subContainer .ladoLeft .role p{
+        font-size: .8rem;
+    }
+    .container .subContainer .ladoLeft .role img{
+        width: 10px;
+    }
+    .container .subContainer .ladoLeft .btn2{
+        margin-bottom: 5px;
+    }
+    .container .subContainer .ladoLeft .btns{
+        margin-left: 5px;
+    }
+    .container .subContainer .ladoLeft .text{
+        font-size: .7rem;
+    }
+}
+
+@media (max-width:370px){
+    .container .subContainer .ladoLeft .role{
+        display: none;
+    }
+}
