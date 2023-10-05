@@ -2,7 +2,10 @@ import './styles.css'
 
 import img1 from './imgs/Rectangle29.jpg'
 import img2 from './imgs/Vectorr.png'
-import img3 from './imgs/fram1.png'
+import img3 from './imgs/Frame 1.png'
+import img4 from './imgs/Vector.png'
+import img5 from './imgs/Rectangle 30.png'
+import img6 from './imgs/pricetags.png'
 
 export const Home = ()=>{
 
@@ -37,7 +40,22 @@ export const Home = ()=>{
                     </div>
                 </div>
                 <div className="ladoRight">
-                    <img src={img3} alt="" />
+                    <img className='imgMulher' src={img3} alt=""/>
+                    <div className="container-lustre">
+                        <div className="marcacao">
+                            <img src={img6} alt="" width={23}/>
+                        </div>
+                        <div className="lustre">
+                            <img src={img5} alt="" width={210} />
+                        </div>
+                    </div>
+                    <div className="container-estrela">
+                        <img src={img4} alt="" width={20} />
+                        <img src={img4} alt="" width={20} />
+                        <img src={img4} alt="" width={20} />
+                        <img src={img4} alt="" width={20} />
+                        <img src={img4} alt="" width={20} />
+                    </div>
                 </div>
             </div>
         </div>

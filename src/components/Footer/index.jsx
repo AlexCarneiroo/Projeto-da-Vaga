@@ -7,14 +7,19 @@ import img4 from './imgs/Vector.png'
 import img5 from './imgs/logo-facebook.png'
 import img6 from './imgs/logo-instagram.png'
 import img7 from './imgs/Group 33img_footer.png'
+import img8 from './imgs/imgMulher.png'
 
 export const Footer = ()=>{
     return(
         <div className="footer">
             <div className="sectionTop">
                 <img src={img1} alt="" />
-                <div className="btn">
-                    <button>ACIONE NOSSO TELEVENDAS</button>
+                <div className="conteudo-top">
+                    <img src={img8} alt="" className='mulher'/>
+                    <img src={img7} alt="" className='detalhe' />
+                    <div className="btn">
+                        <button>ACIONE NOSSO TELEVENDAS</button>
+                    </div>
                 </div>
             </div>
             <div className="sectionBottom">

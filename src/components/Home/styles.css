@@ -119,13 +119,60 @@
 .container .subContainer .ladoRight{
     display: flex;
     width: 50%;
+    position: relative;
+    padding-left: 30px;
 
     @media (max-width:900px) {
         display: none;
     }
 }
 
-.container .subContainer .ladoRight img{
+
+
+.container .subContainer .ladoRight .container-estrela{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: center;
+    background-color: #FFF;
+    border-radius: 10px;
+
+    position: absolute;
+    bottom: 30px;
+    left: 60%;
+}
+.container .subContainer .ladoRight .container-estrela img{
+    margin: 0px 3px;
+}
+
+.container .subContainer .ladoRight .container-lustre .marcacao{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 4px solid #fbaf17;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 105%;
+    top: -5%;
+}
+
+.container .subContainer .ladoRight .container-lustre{
+    width: 20%;
+    position: absolute;
+    bottom: 10%;
+    left: 0%;
+}
+
+
+.container .subContainer .ladoRight{
+
+
     @media (max-width:900px) {
         display: none;
     }
